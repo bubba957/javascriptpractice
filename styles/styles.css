@@ -1,0 +1,12 @@
+
+#slideshow {
+    justify-self: center;
+}
+
+#first {
+    display: block;
+}
+
+div {
+    display: none;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Storytelling</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <section id="slideshow">
+        <img src="images/medieval.webp" height="300px" alt="Queen knighting a knight"/>
+        <img src="images/fairy.jpg" height="300px" alt="Fairy"/>
+        <img src="images/comedy.jpg" height="300px" alt="Primates on bike"/>
+        <img src="images/romance.webp" height="300px" alt="Couple on beach"/>
+    </section>
+
+    <h1>Interactive Storytelling</h1>
+    <p>Select which of these different themes you would like to build your story on.</p>
+    <h2>You can chose between these themes:</h2>
+    <select id="first">
+        <option value="medieval">Medieval</option>
+        <option value="fairyTale">Fairy Tale</option>
+        <option value="funny">Funny</option>
+        <option value="romance">Romance</option>
+    </select>
+    <br>
+    <button id="one" type="submit">Generate Story</button>
+
+    <div id="second">
+        <h1>Now what's your name? </h1>
+        <fieldset>
+            <input type="text" id="name"><br><br>
+            <button id="two">Continue Story</button>
+        </fieldset>
+    </div>
+
+    <div id="medieval">
+        <h1>You are about to go through a grusome battle. What do you do?</h1>
+        <fieldset>
+            <input type="radio" id="honor" name="honor" value="honor">
+            <label for="honor">Do it for my king and my country.</label><br><br>
+            <input type="radio" id="ask" name="ask" value="ask">
+            <label for="ask">Ask another family member to take my place.</label><br><br>
+            <input type="radio" id="coward" name="coward" value="coward">
+            <label for="coward">Run away with my tail between my legs.</label><br><br>
+            <button id="three" type="submit">Continue Story</button>
+        </fieldset>
+    </div>
+
+    <div id="fairy">
+        <h1>You suddenly wake up to find yourself miniature with wings. What do you do?</h1>
+        <fieldset>
+            <input type="radio" id="tiny" name="tiny" value="tiny">
+            <label for="tiny">Oh my gosh! I'm tiny!</label><br><br>
+            <input type="radio" id="wonder" name="wonder" value="wonder">
+            <label for="wonder">Wonder where my family is.</label><br><br>
+            <input type="radio" id="play" name="play" value="play">
+            <label for="play">Play along like nothing happened.</label><br><br>
+            <button id="four" type="submit">Continue Story</button>
+        </fieldset>
+    </div>
+
+    <div id="comedy">
+        <h1>You're friend is about to be hit in the face with a pie. What do you do?</h1>
+        <fieldset>
+            <input type="radio" id="duck" name="duck" value="duck">
+            <label for="duck">Duck. I don't know what's in that pie.</label><br><br>
+            <input type="radio" id="pie" name="pie" value="pie">
+            <label for="pie">Hit my friend with my own pie. He/she was asking for it.</label><br><br>
+            <input type="radio" id="friend" name="friend" value="friend">
+            <label for="friend">Let it happen. It is a friend after all.</label><br><br>
+            <button id="five" type="submit">Continue Story</button>
+        </fieldset>
+    </div>
+
+    <div id="romance">
+        <h1>You find yourself on a teen dating show. What do you do?</h1>
+        <fieldset>
+            <input type="radio" id="complete" name="complete" value="complete">
+            <label for="complete">See it through to the end.</label><br><br>
+            <input type="radio" id="polite" name="polite" value="polite">
+            <label for="polite">Ask politely if I can leave.</label><br><br>
+            <input type="radio" id="leave" name="leave" value="leave">
+            <label for="leave">High-tail it out of there in the middle of the night.</label><br><br>
+            <button id="six" type="submit">Finish Story</button>
+        </fieldset>
+    </div>
+
+    <div id="end">
+        <p>I'm sorry but there's no more stories you can play through. But we have enjoyed having you play
+             through these fantastic stories. Now goodbye and remember you are the maker of your own destiny.</p>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/gh/pamelafox/ka-slideshow-example@master/slideshow.js"></script>
+<script src="js/index.js"></script>
+</html>
