@@ -6,7 +6,7 @@ let fairy;
 let comedy;
 let sciFi;
 let romance;
-let count = 4;
+let count = 4; 
 
 // Recursive function to count from 6 to 1
 const counter = (maxCount) => {
